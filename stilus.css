@@ -1,0 +1,27 @@
+body{
+    
+}
+main{
+    width: 70%;
+    max-width: 762px;
+    margin: auto;
+    background-image: url(kepek/hatterproba.jpg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-direction:row ;
+}
+header > div{
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav > ul{
+    flex:0 0 70%;
+}
