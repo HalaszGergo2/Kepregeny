@@ -1,27 +1,93 @@
 body{
-    
+    background-color: rgb(155, 77, 58);
 }
 main{
-    width: 70%;
-    max-width: 762px;
+    width: 60%;
+    max-width: 600px;
     margin: auto;
     background-image: url(kepek/hatterproba.jpg);
+    font-family: 'Bangers', system-ui;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 header{
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
+    flex: 0 0 100%;
 }
 header > div{
     width: 100%;
 }
 nav{
-    display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    margin: auto;
+    flex: 0 0 95%;
+    padding-left: 70px;
+}
+a{
+    text-decoration: none;
+    color: rgb(18, 10, 54);
+    font-size: 70px;
+    transition: 0.4s;
+}
+li{
+    padding: 30px;
 }
 nav > ul{
-    flex:0 0 70%;
+    list-style-type: none;
+    border: solid 5px rgb(18, 10, 54);
+    border-radius: 15px;
+    background-image: url(kepek/menuhatter.jpg);
+    padding: 0;
 }
+footer{
+    background-color: rgb(189, 9, 9);
+    color: white;
+    text-align: center;
+    flex: 0 0 100%;
+}
+.rendezes{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    background-color: rgb(18, 10, 54);
+    color: white;
+    width: 50px;
+    height: 600px;
+    margin-bottom: 30px;
+    flex: 0 0 5%;
+}
+aside > p{
+    writing-mode: vertical-rl;
+    padding-top: 100px;
+    letter-spacing: 2px;
+}
+.eger, .eger2, .eger3{
+    transition: 0.4s;
+}
+.eger:hover, .eger2:hover, .eger3:hover{
+    background-color: rgb(189, 9, 9);
+}
+a:hover{
+    color: white;
+}
+
+@media (max-width: 800px) {
+    main{
+        flex-direction: column;
+    }
+    aside{
+        flex: 0 0 100%;
+        height: 100px;
+    }
+    nav{
+        flex: 0 0 100%;
+    }
+    aside > p{
+        writing-mode: horizontal-tb;
+        padding: 0;
+        letter-spacing: 2px;
+    }
+  }
