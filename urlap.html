@@ -9,30 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="urlap.css">
     <title>Űrlap</title>
 </head>
 <body>
     <main>
         <header>
-            <h2>Képregény űrlap</h2>
+            <h1>Képregény űrlap</h1>
         </header>
         <nav>
-            <ul>
-                <div class="eger">
-                    <li><a href="index.html">Főoldal</a></li>
-                </div>
-                <div class="eger2">
-                    <li><a href="kepregeny.html">Képregény</a></li>
-                </div>
-                <div class="eger3">
-                    <li><a href="urlap.html">Űrlap</a></li>
-                </div>
-            </ul>
+                <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="kepregeny.html">Képregény</a></li>
+                        <li><a href="urlap.html">Űrlap</a></li>
+                </ul>
         </nav>
         <article>
             <form>
-                <fieldset>
-                    <legend>Rólad</legend>
+                <fieldset class="kozepre">
+                    <legend>Rólad:</legend>
                     <label for="nev">Neved:</label><br>
                     <input type="text" id="neved" name="neved" placeholder="Kolompár Jóska"><br>
                     <label for="szuletes">Születési dátum:</label><br>
@@ -46,24 +41,22 @@
                     <label for="no">nő</label>
                     <br>
                 </fieldset>
-                <fieldset>
-                    <legend>A képregényről</legend>
+                <fieldset class="kozepre">
+                    <legend>A képregényről:</legend>
                     <label for="kerdes1">Szerinted kinek volt igaza a képregényben, és miért?</label><br>
-                    <input type="textarea" name="kerdes1" id="kerdes1" size="100"><br>
+                    <input type="textarea" name="kerdes1" id="kerdes1" size="100" class="terulet"><br>
                     <label for="kerdes2">Te hogyan kezelted volna a helyzetet?</label><br>
-                    <input type="textarea" name="kerdes2" id="kerdes2" size="100"><br>
+                    <input type="textarea" name="kerdes2" id="kerdes2" size="100" class="terulet"><br>
                     <label for="kerdes3">Te belerúgtad volna a vízbe?</label><br>
-                    <input type="textarea" name="kerdes3" id="kerdes3" size="100"><br>
+                    <input type="textarea" name="kerdes3" id="kerdes3" size="100" class="terulet"><br>
                     <label for="kerdes4">Történt már veled hasonló?</label><br>
-                    <input type="textarea" name="kerdes4" id="kerdes4" size="100"><br>
-
-                    
+                    <input type="textarea" name="kerdes4" id="kerdes4" size="100" class="terulet"><br>
                 </fieldset>
-                <fieldset>
-                    <legend>Vélemény</legend>
+                <fieldset class="kozepre">
+                    <legend>Vélemény:</legend>
                     <label for="tetszes">Mennyire tetszett az oldal?</label><br>
                     <input type="range" id="tetszes" name="tetszes_szam"
-                    oninput="this.form.t_sz.value=this.value"><br>
+                    oninput="this.form.t_sz.value=this.value" class="meretezes"><br>
                     <input type="number" name="t_sz" size="6" oninput="this.form.tetszes.value=this.value" min="0" max="100">
                 </fieldset>
                 <input type="submit" name="bekuldes" id="bekuldes">

@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(155, 77, 58);
+}
+main{
+    max-width: 90%;
+    width: 967px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Bangers', system-ui;
+    background-image: url(kepek/menuhatter.jpg);
+    font-size: 26px;
+}
+header{
+    text-align: center;
+    flex: 0 0 100%;
+    font-size: 30px;
+}
+nav{
+    flex: 0 0 100%;
+}
+li{
+    display: inline-block;
+    padding-left: 110px;
+    padding-right: 100px;
+}
+a:hover{
+    color: rgb(97, 96, 102);
+    transition: 0.5s;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(18, 10, 54);
+}
+footer{
+    background-color: rgb(189, 9, 9);
+    color: white;
+    text-align: center;
+    flex: 0 0 100%;
+    padding: 5px;
+}
