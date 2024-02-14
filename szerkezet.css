@@ -1,0 +1,28 @@
+main{
+    max-width: 80%;
+    width: 867px;
+    margin: auto;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card-holder {
+    width: 280px;
+    height: 380px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
