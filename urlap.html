@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Képregény">
+    <meta name="keywords" content="Kaland, Balaton, Képregény">
+    <meta name="author" content="Baksa Bence, Halász Gergő">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Űrlap</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Képregény űrlap</h2>
+        </header>
+        <nav>
+            <ul>
+                <div class="eger">
+                    <li><a href="index.html">Főoldal</a></li>
+                </div>
+                <div class="eger2">
+                    <li><a href="kepregeny.html">Képregény</a></li>
+                </div>
+                <div class="eger3">
+                    <li><a href="urlap.html">Űrlap</a></li>
+                </div>
+            </ul>
+        </nav>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Rólad</legend>
+                    <label for="nev">Neved:</label><br>
+                    <input type="text" id="neved" name="neved" placeholder="Kolompár Jóska"><br>
+                    <label for="szuletes">Születési dátum:</label><br>
+                    <input type="date" id="szuletes" name="szuletes" ><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="vki@vki.hu"><br>
+                    <label for="nem">Nem:</label><br>
+                    <input type="radio" name="nem" id="férfi">
+                    <label for="férfi">férfi</label>
+                    <input type="radio" name="nem" id="no">
+                    <label for="no">nő</label>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>A képregényről</legend>
+                    <label for="kerdes1">Szerinted kinek volt igaza a képregényben, és miért?</label><br>
+                    <input type="textarea" name="kerdes1" id="kerdes1" size="100"><br>
+                    <label for="kerdes2">Te hogyan kezelted volna a helyzetet?</label><br>
+                    <input type="textarea" name="kerdes2" id="kerdes2" size="100"><br>
+                    <label for="kerdes3">Te belerúgtad volna a vízbe?</label><br>
+                    <input type="textarea" name="kerdes3" id="kerdes3" size="100"><br>
+                    <label for="kerdes4">Történt már veled hasonló?</label><br>
+                    <input type="textarea" name="kerdes4" id="kerdes4" size="100"><br>
+
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Vélemény</legend>
+                    <label for="tetszes">Mennyire tetszett az oldal?</label><br>
+                    <input type="range" id="tetszes" name="tetszes_szam"
+                    oninput="this.form.t_sz.value=this.value"><br>
+                    <input type="number" name="t_sz" size="6" oninput="this.form.tetszes.value=this.value" min="0" max="100">
+                </fieldset>
+                <input type="submit" name="bekuldes" id="bekuldes">
+              </form>
+        </article>
+        <footer>
+            <p>Baksa Bence, Halász Gergő</p>
+        </footer>
+    </main>
+</body>
+</html>
