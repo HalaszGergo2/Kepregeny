@@ -13,15 +13,15 @@ header{
     flex-direction: row;
    
 }
+#meret{
+    width: 50%;
+}
 header > div{
     width: 100%;
 }
 nav{
     margin: auto;
-    margin-left: 20px;
-    margin-right: 40px;
-    flex: 0 0 90%;
- 
+    flex: 0 0 95%;
 }
 a{
     text-decoration: none;
@@ -38,6 +38,8 @@ nav > ul{
     border-radius: 15px;
     background-image: url(kepek/menuhatter.jpg);
     padding: 0;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 footer{
     background-color: rgb(189, 9, 9);
@@ -52,6 +54,7 @@ header>div>img {
 .rendezes{
     display: flex;
     flex-direction: row;
+
 }
 aside{
     background-color: rgb(18, 10, 54);
@@ -59,7 +62,7 @@ aside{
     width: 50px;
     height: 600px;
     margin-bottom: 30px;
-    flex: 0 0 10%;
+    flex: 0 0 5%;
 }
 aside > p{
     writing-mode: vertical-rl;
@@ -82,12 +85,12 @@ a:hover{
     }
 
     .rendezes{
-    
         flex-direction: column;
     }  
     aside{
         flex: 0 0 100%;
         height: 100px;
+        width: 100%;
     }
     nav{
         flex: 0 0 100%;
@@ -96,5 +99,9 @@ a:hover{
         writing-mode: horizontal-tb;
         padding: 0;
         letter-spacing: 2px;
+    }
+    nav > ul{
+        margin-right: 0px;
+        margin-left: 0px;
     }
   }
