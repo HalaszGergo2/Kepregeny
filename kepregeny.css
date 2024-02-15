@@ -1,29 +1,28 @@
 @import url(kozos.css);
-.card {
-
-    max-width: 960px;
-}
 
 .card-holder {
     width: 280px;
-    height: 380px;
+    height: 480px;
     padding: 10px;
     background-color: white;
     border-radius: 10px;
-}
 
+}
 article{
+    width: 100%;
+}
+article{
+    flex: 0 0 100%
+
+}
+#rendezes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
 }
-
 .card{
-    height: 20%;
-    align-items: baseline;
+    padding: 10px;
 }
-
 img{
     width: 100%;
 }
@@ -34,6 +33,35 @@ h3{
 }
 
 p{
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 1000px){
+    li{
+       
+       padding-left: 120px;
+    }
+    nav{
+        flex: 0 0 100%;
+    }
+    main{
+        width: 100%;
+        max-width: 1000px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px){
+    li{
+       padding-top: 20px;
+       padding-bottom:20px;
+    }
+    nav{
+        flex: 0 0 100%;
+    }
+    main{
+        width: 100%;
+        max-width: 1000px;
+        flex-direction: column;
+    }
 }
