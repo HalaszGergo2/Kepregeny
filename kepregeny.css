@@ -12,3 +12,20 @@
     background-color: white;
     border-radius: 10px;
 }
+
+
+
+
+img{
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+    font-size: 22px;
+}
+
+p{
+    font-size: 12px;
+    text-align: center;
+}
