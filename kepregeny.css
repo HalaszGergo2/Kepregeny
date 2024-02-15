@@ -1,8 +1,7 @@
 @import url(kozos.css);
-.container {
-    width: 100%;
+.card {
+
     max-width: 960px;
-    margin: 0 auto;
 }
 
 .card-holder {
@@ -13,8 +12,17 @@
     border-radius: 10px;
 }
 
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
-
+.card{
+    height: 20%;
+    align-items: baseline;
+}
 
 img{
     width: 100%;
