@@ -5,12 +5,20 @@ article{
 }
 legend{
     padding: 10px;
+    text-align: left;
+    font-size: 35px;
 }
 fieldset{
     padding: 20px;
 }
+fieldset > input{
+    background-color: rgb(146, 117, 109);
+    opacity: 0.7;
+    color: white;
+}
 input{
     padding: 5px;
+    margin: 15px;
 }
 .terulet{
     padding: 30px;
@@ -19,11 +27,25 @@ input{
     text-align: center;
 }
 .meretezes{
-    width: 550px;
+    width: 60%;
 }
-@media (max-width: 800px){
+#gomb{
+    text-align: center;
+    padding: 20px;
+}
+#gomb > input{
+    width: 15%;
+    background-color: rgb(155, 77, 58);
+    color: white;
+}
+#gomb > input:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
     li{
-        padding: 0;
+       
+       padding-left: 120px;
     }
     nav{
         flex: 0 0 100%;
@@ -31,5 +53,32 @@ input{
     main{
         width: 100%;
         max-width: 1000px;
+        flex-direction: column;
+    }
+    .terulet{
+        width: 80%;
+    }
+    .meretezes{
+        width: 60%;
+    }
+}
+@media (max-width: 500px){
+    li{
+       padding-top: 20px;
+       padding-bottom:20px;
+    }
+    nav{
+        flex: 0 0 100%;
+    }
+    main{
+        width: 100%;
+        max-width: 1000px;
+        flex-direction: column;
+    }
+    .terulet{
+        width: 80%;
+    }
+    .meretezes{
+        width: 60%;
     }
 }
