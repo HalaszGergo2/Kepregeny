@@ -13,8 +13,7 @@ article{
     width: 100%;
 }
 article{
-    flex: 0 0 100%
-
+    flex: 0 0 100%;
 }
 #rendezes{
     display: flex;
@@ -50,6 +49,11 @@ p{
         width: 100%;
         max-width: 1000px;
         flex-direction: column;
+    }
+    article{
+        flex-direction: column;
+        align-content: space-around;
+        align-items: space-around;
     }
 }
 @media (max-width: 500px){
